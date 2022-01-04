@@ -1,16 +1,14 @@
 import React, { useState } from "react"
 import SbEditable from "storyblok-react"
 import { render } from "storyblok-rich-text-react-renderer"
-import styles from "../styles/Concert.module.scss"
+import styles from "../styles/Artist.module.scss"
 import { getData } from "../utils/storyblok"
 import RelatedItemGallerySmall from "./RelatedItemGallerySmall"
 import RelatedItemGallery from "./RelatedItemGallery"
 import InPageSlideshow from "./InPageSlideshow"
 import SmallCardList from "./SmallCardList"
 
-
-
-const Concert = ({ data, level }) => {
+const Artist = ({ data, level }) => {
   var locale = 'en';
   //enriching data
   if (level === 'data') {
@@ -21,16 +19,18 @@ const Concert = ({ data, level }) => {
   }
 
 
+
+  //returning the HTML
   return (
     <SbEditable content={content} key={content._uid}>
       <main>
         {/* <div className={[styles.movie, styles.test].join(' ')}> */}
-        <div className={styles.Concert}>
+        <div className={styles.artist}>
           <h1 className={styles.title}>
             {content.title}
           </h1>
-           <div className={styles.Description}>
-            {render(content.Description)}
+          <div className={styles.description}>
+            {render(content.description)}
           </div>
         </div>
       </main>
@@ -38,4 +38,4 @@ const Concert = ({ data, level }) => {
   )
 }
 
-export default Concert
+export default Artist

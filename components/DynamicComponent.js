@@ -26,6 +26,8 @@ import Title from './Title'
 import TopMovies from './TopMovies'
 import Concert from './Concert'
 import Concertlist from './Concertlist'
+import Artist from './Artist'
+import Artistlist from './ArtistList'
 
 const Components = {
   'teaser': Teaser,
@@ -55,7 +57,9 @@ const Components = {
   'title':Title,
   'topmovies':TopMovies,
   'concert':Concert,
-  'concertlist':Concertlist
+  'concertlist':Concertlist,
+  'artist':Artist,
+  'artistlist':Artistlist
 }
 
 
