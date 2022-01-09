@@ -25,7 +25,7 @@ const Concert = ({ data, level }) => {
     <SbEditable content={content} key={content._uid}>
       <main>
         {/* <div className={[styles.movie, styles.test].join(' ')}> */}
-        <div className={styles.Concert}>
+        <div className={styles.concert}>
           <h1 className={styles.title}>
             {content.title}
           </h1>
@@ -35,7 +35,7 @@ const Concert = ({ data, level }) => {
             <div className={styles.Location}>
             {render(content.Location)}
             </div>
-            <div className={styles.Date}>
+            <div className={styles.date}>
             {render(content.Date)}
             </div>
         </div>

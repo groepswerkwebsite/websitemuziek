@@ -36,7 +36,6 @@
       margin-bottom: 20px;
 
     }
-
     .content {}
   }
 
@@ -46,7 +45,9 @@
 
   .description {}
 
-  .date {}
+  .date {
+    line-height: 150px;
+  }
 
   .location {}
 
