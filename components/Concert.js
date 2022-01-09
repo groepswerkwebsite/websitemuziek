@@ -31,7 +31,13 @@ const Concert = ({ data, level }) => {
           </h1>
            <div className={styles.Description}>
             {render(content.Description)}
-          </div>
+            </div>
+            <div className={styles.Location}>
+            {render(content.Location)}
+            </div>
+            <div className={styles.Date}>
+            {render(content.Date)}
+            </div>
         </div>
       </main>
     </SbEditable>
