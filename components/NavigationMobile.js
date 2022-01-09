@@ -34,7 +34,7 @@ const NavigationMobile = ({ locale, locales }) => {
         <div className={styles.navlogo}>
           <a href="/">
             <img
-              src="https://a.storyblok.com/f/133261/3039x582/a60d166ec2/logo-colored-full.png/m/200x0"
+              src="https://a.storyblok.com/f/140451/320x200/b2d54c9b32/logo-muziek.png"
               alt="IMDBPlus Logo"
               className=""
             />
