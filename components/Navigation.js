@@ -2,10 +2,6 @@ import styles from "../styles/Navigation.module.scss"
 import Image from "next/image"
 
 const Navigation = ({ locale, locales }) => {
-  const resolveMovies = {
-    en: 'Movies',
-    nl: 'Films',
-  }
   const resolveArtists = {
     en: 'Artists',
     nl: 'Artiesten',
@@ -48,9 +44,6 @@ const Navigation = ({ locale, locales }) => {
         </div>
         <div className={styles.navlinkswrapper}>
           <div className={styles.navlinks}>
-            <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/movies`} className={styles.movie}>{resolveMovies[locale]}</a>
-            </div>
             <div className={styles.navlink}>
               <a href={`${defaultLocale}pages/artists`} className={styles.artist}>{resolveArtists[locale]}</a>
             </div>

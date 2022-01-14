@@ -7,7 +7,6 @@ import PostsList from './PostsList'
 import Page from './Page'
 import BlogPost from './BlogPost'
 import Text from './Text'
-import Movie from './Movie'
 import Personality from './Personality'
 import Studio from './Studio'
 import Genre from './Genre'
@@ -15,7 +14,6 @@ import Country from './Country'
 import NewsItem from './NewsItem'
 import FrontpageSlideshow from './FrontpageSlideshow'
 import Intro from './Intro'
-import MovieList from './MovieList'
 import NewsItemList from './NewsItemList'
 import PersonalityList from './PersonalityList'
 import ProductList from './ProductList'
@@ -39,7 +37,6 @@ const Components = {
   'post': BlogPost,
   'text': Text,
   'selected-posts': PostsList,
-  'movie': Movie,
   'personality': Personality,
   'studio': Studio,
   'genre' : Genre,
@@ -47,7 +44,6 @@ const Components = {
   'newsitem': NewsItem,
   'frontpageslideshow':FrontpageSlideshow,
   'intro':Intro,
-  'movielist':MovieList,
   'newsitemlist':NewsItemList,
   'productlist':ProductList,
   'productcategory':Placeholder,

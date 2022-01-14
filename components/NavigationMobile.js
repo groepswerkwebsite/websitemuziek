@@ -3,10 +3,6 @@ import React, { useState } from "react"
 
 const NavigationMobile = ({ locale, locales }) => {
 
-  const resolveMovies = {
-    en: 'Movies',
-    nl: 'Films',
-  }
   const resolveArtists = {
     en: 'Artists',
     nl: 'Artiesten',
