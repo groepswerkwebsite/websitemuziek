@@ -7,7 +7,6 @@ import PostsList from './PostsList'
 import Page from './Page'
 import BlogPost from './BlogPost'
 import Text from './Text'
-import Personality from './Personality'
 import Studio from './Studio'
 import Genre from './Genre'
 import Country from './Country'
@@ -15,7 +14,6 @@ import NewsItem from './NewsItem'
 import FrontpageSlideshow from './FrontpageSlideshow'
 import Intro from './Intro'
 import NewsItemList from './NewsItemList'
-import PersonalityList from './PersonalityList'
 import ProductList from './ProductList'
 import Product from './Product'
 import EmailOptin from './EmailOptin'
@@ -37,7 +35,6 @@ const Components = {
   'post': BlogPost,
   'text': Text,
   'selected-posts': PostsList,
-  'personality': Personality,
   'studio': Studio,
   'genre' : Genre,
   'country' : Country,
@@ -47,7 +44,6 @@ const Components = {
   'newsitemlist':NewsItemList,
   'productlist':ProductList,
   'productcategory':Placeholder,
-  'personalitylist':PersonalityList,
   'product':Product,
   'emailoptin':EmailOptin,
   'twocol':TwoCol,
