@@ -7,17 +7,9 @@ import SmallCardList from "./SmallCardList"
 
 
 const NewsItem = ({ data, level }) => {
-  var movies = [];
-  var personalities = [];
   //enriching data
   if (level === 'data') {
     var content = data.story.content;
-    movies = data.rels.filter(obj => {
-      return content.movies.includes(obj.uuid);
-    });
-    personalities = data.rels.filter(obj => {
-      return content.personalities.includes(obj.uuid);
-    });
   } else {
     var content = data;
   }
@@ -38,9 +30,6 @@ const NewsItem = ({ data, level }) => {
           <div className={styles.article}>
             {render(content.article)}
           </div>
-          {movies && movies.length > 0 && <SmallCardList items={movies} title="Related movies" type="movie"></SmallCardList>}
-          {personalities && personalities.length > 0 && <SmallCardList items={personalities} title="Related personalities" type="personality"></SmallCardList>}
-      
         </div>
       </main>
     </SbEditable>

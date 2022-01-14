@@ -8,6 +8,11 @@ import RelatedItemGallery from "./RelatedItemGallery"
 import InPageSlideshow from "./InPageSlideshow"
 import SmallCardList from "./SmallCardList"
 
+const resolveSongs = {
+  en: 'Songs',
+  nl: 'Liedjes',
+}
+
 const Artist = ({ data, level }) => {
   var locale = 'en';
   var songs = [];
@@ -15,6 +20,9 @@ const Artist = ({ data, level }) => {
   if (level === 'data') {
     locale = data.story.lang;
     var content = data.story.content;
+    var songs = data.rels.filter(obj => {
+      return content.songs.includes(obj.uuid);
+    });
   } else {
     var content = data;
   }
@@ -33,7 +41,7 @@ const Artist = ({ data, level }) => {
           <div className={styles.description}>
             {render(content.description)}
           </div>
-          {songs && songs.length > 0 && <SmallCardList items={songs} title="Related songs" type="song"></SmallCardList>}
+          {songs && songs.length > 0 && <RelatedItemGallerySmall items={resolveSongs} title="Related songs" type="song"></RelatedItemGallerySmall>}
         </div>
       </main>
     </SbEditable>
